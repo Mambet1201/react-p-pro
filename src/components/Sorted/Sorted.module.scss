@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10%;
+    button {
+      padding: 10px;
+      min-width: 85px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      transition: 0.3s;
+    }
+    .activ {
+      background-color: black;
+      color: white;
+      transition: 0.3s;
+    }
+  }
+}

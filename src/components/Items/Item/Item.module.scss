@@ -1,0 +1,73 @@
+.item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  img {
+    width: 290px;
+  }
+  .price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      font-weight: 700;
+    }
+    .addItem {
+      padding: 10px 5px;
+      cursor: pointer;
+      border: 2px solid #eb5a1e;
+      color: #eb5a1e;
+      font-weight: 700;
+      border-radius: 20px;
+      background-color: white;
+    }
+    .addItem:hover {
+      border: 2px solid #1e51eb;
+      color: #1e51eb;
+    }
+  }
+
+  .size {
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    gap: 3px;
+    .activ {
+      background-color: #eb5a1e;
+    }
+    button {
+      padding: 6px 3px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      border: 1px solid green;
+      background-color: #f2b1b1;
+      color: white;
+      border: none;
+    }
+    .diameter {
+      display: flex;
+      gap: 3px;
+      width: 100%;
+      button {
+        width: 33%;
+      }
+    }
+    .dough {
+      display: flex;
+      gap: 3px;
+      width: 100%;
+      button {
+        width: 50%;
+      }
+    }
+  }
+}

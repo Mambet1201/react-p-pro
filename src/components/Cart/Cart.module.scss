@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.clearCart {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+  gap: 20px;
+  p {
+    font-size: 22px;
+  }
+  button {
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+  }
+}
+.cart {
+  background-color: rgb(254, 240, 255);
+  padding: 0 25px;
+  border-radius: 25px;
+}
+.header_logo {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.336);
+  padding-bottom: 20px;
+}
+.infoBlock {
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    button {
+      border: none;
+      padding: 3px;
+      cursor: pointer;
+      opacity: 0.5;
+      border-radius: 10px;
+    }
+  }
+  .floorButtons,
+  .price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    button {
+      padding: 10px 8px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+    }
+    .back {
+      opacity: 0.5;
+      border: 2px solid rgba(255, 255, 255, 0);
+      &:hover {
+        box-sizing: border-box;
+        border: 2px solid blue;
+        opacity: 1;
+        transition: 0.3s;
+      }
+    }
+    .pay {
+      background-color: rgb(255, 81, 0);
+      color: white;
+      &:hover {
+        background-color: green;
+        transition: 0.5s;
+      }
+    }
+  }
+}

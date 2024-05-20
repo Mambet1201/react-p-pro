@@ -1,0 +1,28 @@
+header {
+  //   background-color: rgb(80, 144, 200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 35px;
+  border-bottom: 1px solid black;
+  .header_logo {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header_card {
+    background-color: orangered;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    gap: 5px;
+    height: 35px;
+    width: 100px;
+  }
+  .icon {
+    color: blue;
+  }
+}
