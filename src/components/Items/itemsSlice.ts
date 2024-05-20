@@ -23,7 +23,7 @@ interface SliceState {
 const data: any = localStorage.getItem("list");
 
 const initialState: SliceState = {
-  todos: data.trim() ? JSON.parse(data) : [],
+  todos: data?.trim() ? JSON.parse(data) : [],
   totalPrice: 0,
   cartItemPrice: 0,
 };

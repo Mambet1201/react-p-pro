@@ -24,7 +24,7 @@ const Header = () => {
         }}
       >
         <span>{totalPrice}Р | </span>
-        <TiShoppingCart className={styles.icon} /> <span>{list.length}</span>
+        <TiShoppingCart className={styles.icon} /> <span>{list?.length}</span>
       </div>
     </header>
   );

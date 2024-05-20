@@ -1,4 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { TypedUseSelectorHook, useDispatch } from "react-redux";
+import { AppDispatch, RootState } from "../../../store/store";
+import { useSelector } from "react-redux";
 
 interface SortedSlice {
   categoryId: number;
@@ -28,5 +31,7 @@ export const sortedSlice = createSlice({
     },
   },
 });
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+export const useAppDispath = useDispatch<AppDispatch>;
 export const { changeCategory, changeSort } = sortedSlice.actions;
 export default sortedSlice.reducer;
